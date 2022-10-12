@@ -54,7 +54,7 @@ namespace coding_events_practice.Controllers
             return Redirect("/Events");
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route("Events/Edit/{eventId}")]
         public IActionResult Edit(int eventId)
         {
