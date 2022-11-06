@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace CodingEventsDemo.Controllers
 {
-    public class EventCategoryController: Controller
+    public class EventCategoryController : Controller
     {
         private EventDbContext context;
 
@@ -21,7 +21,6 @@ namespace CodingEventsDemo.Controllers
         {
             ViewBag.title = "All Categories";
             List<EventCategory> categories = context.Categories.ToList();
-
             return View(categories);
         }
     }
