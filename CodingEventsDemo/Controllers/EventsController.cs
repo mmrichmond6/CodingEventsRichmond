@@ -32,7 +32,7 @@ namespace coding_events_practice.Controllers
         public IActionResult Add()
         {
             List<EventCategory> categories = context.Categories.ToList();
-            AddEventViewModel addEventViewModel = new AddEventViewModel();
+            AddEventViewModel addEventViewModel = new AddEventViewModel(categories);
 
             return View(addEventViewModel);
         }
