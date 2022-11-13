@@ -36,6 +36,7 @@ namespace coding_events_practice.Controllers
         {
             List<EventCategory> categories = context.Categories.ToList();
             AddEventViewModel addEventViewModel = new AddEventViewModel(categories);
+            //AddEventViewModel addEventViewModel = new AddEventViewModel(context.Categories.ToList());
 
             return View(addEventViewModel);
         }

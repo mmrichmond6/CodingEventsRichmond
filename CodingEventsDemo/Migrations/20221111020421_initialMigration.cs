@@ -2,7 +2,7 @@
 
 namespace CodingEventsDemo.Migrations
 {
-    public partial class MyInitialMigration : Migration
+    public partial class initialMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
